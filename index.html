@@ -17,20 +17,22 @@
     </header>
     <main>
         <h2 id="texto-bienvenida">Bienvenidos a la mejor opción para encriptar y desencriptar texto</h2>
+        <p id="advertencia">(Por ahora no se admiten números, carácteres especiales ni letras mayúsculas)</p>
         <section id="contenedor-encriptar">
             <p class="texto-descripcion">Inserte aquí el texto que desea encriptar</p>
-            <textarea name="Texto-usuario" id="" cols="30" rows="10" itemid="area-encriptar"></textarea>
-            <button id="boton-encriptar">Encriptar</button>        
+            <textarea name="texto-usuario" id="area-encriptar" cols="30" rows="10"></textarea>
+            <button id="boton-encriptar" onclick="guardarTexto('area-encriptar')">Encriptar</button>        
         </section>
         <section id="contenedor-desencriptar">
             <p class="texto-descripcion">Inserte aquí el texto que desea desencriptar</p>
-            <textarea name="texto-generado" id="" cols="30" rows="10" itemid="area-desencriptar"></textarea>
-            <button id="boton-desencriptar">Desencriptar</button>
+            <textarea name="texto-generado" id="area-desencriptar" cols="30" rows="10"></textarea>
+            <button id="boton-desencriptar" onclick="guardarTexto('area-desencriptar')">Desencriptar</button>
         </section>
     </main>
     <footer>
         <p id="autor">Autor: José Ibañez</p>
         <img src="img/Hand.png" alt="logo del autor" id="logo">
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
