@@ -6,6 +6,11 @@ let textoEncriptado = "";
 let textoDesencriptado = "";
 let areaEncriptado = "";
 let areaDesencriptado = "";
+let botonCopiarEncriptado;
+let botonCopiarDesencriptado;
+let textoEncriptadoCopiado;
+let textoDesencriptadoCopiado;
+
 
 // Seleccionar los elementos textarea por su ID
 areaEncriptado = document.getElementById('area-desencriptar');
@@ -14,6 +19,15 @@ areaDesencriptado = document.getElementById('area-encriptar');
 // Agregar listeners para cambiar el color de fondo al hacer clic en los textareas
 areaEncriptado.addEventListener('click', function() {this.style.background = "white";})
 areaDesencriptado.addEventListener('click', function() {this.style.background = "white";})
+
+botonCopiarEncriptado = document.getElementById('copiar-encriptado')
+botonCopiarDesencriptado = document.getElementById('copiar-desencriptado')
+
+botonCopiarEncriptado.addEventListener('click', function () { 
+    textoEncriptadoCopiado = areaEncriptado.value;
+    navigator.clipboard.writeText(textoEncriptadoCopiado); })
+botonCopiarDesencriptado.addEventListener('click', function () { textoDesencriptadoCopiado = areaDesencriptado.value;
+    navigator.clipboard.writeText(textoDesencriptadoCopiado); })
 
 // Función para guardar el texto y determinar si encriptar o desencriptar
 function guardarTexto(areaId) {
