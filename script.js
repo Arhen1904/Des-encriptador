@@ -20,12 +20,16 @@ areaDesencriptado = document.getElementById('area-encriptar');
 areaEncriptado.addEventListener('click', function() {this.style.background = "white";})
 areaDesencriptado.addEventListener('click', function() {this.style.background = "white";})
 
+// Seleccionar los botones para copiar al portapapeles por si ID
 botonCopiarEncriptado = document.getElementById('copiar-encriptado')
 botonCopiarDesencriptado = document.getElementById('copiar-desencriptado')
 
+// Agregar listeners para copiar el texto del textarea del texto encriptado al portapapeles
 botonCopiarEncriptado.addEventListener('click', function () { 
     textoEncriptadoCopiado = areaEncriptado.value;
     navigator.clipboard.writeText(textoEncriptadoCopiado); })
+
+    // Agregar listeners para copiar el texto del textarea del texto desencriptado al portapapeles
 botonCopiarDesencriptado.addEventListener('click', function () { textoDesencriptadoCopiado = areaDesencriptado.value;
     navigator.clipboard.writeText(textoDesencriptadoCopiado); })
 

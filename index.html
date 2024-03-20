@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/Candado.png">
     <title>Des-Encriptador</title>
 </head>
 <body>
@@ -19,15 +20,15 @@
         <h2 id="texto-bienvenida">Bienvenidos a la mejor opción para encriptar y desencriptar texto</h2>
         <p id="advertencia">(Por ahora no se admiten números, carácteres especiales ni letras mayúsculas)</p>
         <section id="contenedor-encriptar">
-            <p class="texto-descripcion">Inserte aquí el texto que desea encriptar</p>
+            <p class="texto-descripcion">Inserte en este cuadro el texto que desea encriptar</p>
             <textarea name="texto-usuario" id="area-encriptar" cols="30" rows="10"></textarea>
-            <button id="copiar-desencriptado"></button>
+            <button id="copiar-desencriptado" title="Copiar texto al portapapeles"></button>
             <button id="boton-encriptar" onclick="guardarTexto('area-encriptar')">Encriptar</button>        
         </section>
         <section id="contenedor-desencriptar">
-            <p class="texto-descripcion">Inserte aquí el texto que desea desencriptar</p>
+            <p class="texto-descripcion">Inserte en este cuadro el texto que desea desencriptar</p>
             <textarea name="texto-generado" id="area-desencriptar" cols="30" rows="10"></textarea>
-            <button id="copiar-encriptado"></button>
+            <button id="copiar-encriptado" title="Copiar texto al portapapeles"></button>
             <button id="boton-desencriptar" onclick="guardarTexto('area-desencriptar')">Desencriptar</button>
         </section>
     </main>
