@@ -80,14 +80,14 @@ textarea {
 }
 
 #area-encriptar {
-    background-image: url(img/Fondo\ de\ espera\ encriptar.png);
+    background-image: url("https://i.ibb.co/DRwMyGh/Fondo-de-espera-encriptar.png");
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: 50% 105%;
 }
 
 #area-desencriptar {
-    background-image: url(img/Fondo\ de\ espera\ desencriptar.png);
+    background-image: url("https://i.ibb.co/mqb2qP9/Fondo-de-espera-desencriptar.png");
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: 50% 110%;
@@ -99,7 +99,7 @@ textarea {
     position: relative;
     bottom: 8.4vw;
     left: 18.3vw;
-    background-image: url(img/Copiar.png);
+    background-image: url("https://i.ibb.co/jzMqtxK/Copiar.png");
     background-position: center;
     background-size: 100% 100%;
     border: none;
