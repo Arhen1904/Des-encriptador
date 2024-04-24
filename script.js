@@ -87,7 +87,7 @@ function desencriptarTexto() {
             index += 4;
         } else if (textoParaDesencriptar == 'i') {
             textoDesencriptado += "i";
-            index += 2;
+            index += 3;
         } else if (textoParaDesencriptar == 'o') {
             textoDesencriptado += "o";
             index += 3;    
